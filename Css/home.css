@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #EDEDED;
+}
+
+header {
+    display: grid;
+    height: 110px;
+    width: 100%;
+    background-color: #B2C5C1;
+    align-items: center;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "foto barraHeader barraHeader";
+    grid-gap: 10px 20px;
+}
+
+
+#imgLogo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+#barraHeader {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+#itemLinkHeader{
+    text-decoration: none;
+    color: black;
+}
+#itemListHeader {
+    position: relative;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#buttonHeader {
+    background-color: #B2C5C1;
+    border: none;
+    width: 88px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #B2C5C1;
+    min-width: 160px;
+    border: 1px solid #2B573C;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    /* Start slightly above */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Add transition for smooth effect */
+}
+
+.dropdown-content li {
+    padding: 12px;
+    text-align: left;
+    list-style: none;
+}
+
+.dropdown-content li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+
+.dropdown-content li:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+main {
+
+
+    max-width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr;
+    grid-template-rows: 1fr 2px 1fr 2px 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.dividirRow1 {
+    width: 100%;
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    background-color: #2B573C;
+}
+
+.dividirRow {
+    width: 100%;
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    background-color: #2B573C;
+}
+
+#img1 {
+
+    text-align: right;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#img1Inside {
+    height: 150px;
+    width: 300px;
+}
+
+#img2Inside {
+    height: 150px;
+    width: 300px;
+}
+
+#texto1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 80%;
+    margin-left: 5px;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+main div img {
+    width: 150px;
+    height: 150px;
+}
+
+#img2 {
+    text-align: right;
+    grid-column: 3 / 4;
+    grid-row: 3 / 3;
+}
+
+#texto2 {
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 25px;
+    grid-column: 1 / 2;
+    grid-row: 3 / 3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 80%;
+
+}
+
+#texto3 {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+@media (max-width: 450px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    #barraHeader{
+        display: flex;
+        max-width: 250px ;
+        flex-wrap: wrap;
+        margin-left: 15px;
+
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+
+footer {
+
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100vw;
+    background-color: #B2C5C1;
+    font-size: 12px;
+    padding: 10px 0;
+    gap: 10px;
+}
+
+#img-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#direitos {
+    text-align: center;
+}
+
+
+
+#imgFooterRede {
+    margin-left: 0;
+    height: 35px;
+    width: 35px;
+}
+
+#imgDescricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
