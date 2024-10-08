@@ -2,17 +2,13 @@
 
 - Nesse projeto foi utilizado todo conhecimento adquiro ao longo do curso, com duração de 90 horas. Realizei pesquisas e consegui completar a atividade com sucesso! O curso tinha foco principal em `HTML` e `CSS` ao final tivemos um breve contato com o `Javascript`.
 
-# Como abrir e testar no seu navegado?
+# Abra o link e navegue pela página:
 
 - Abaixo o link para acessar e navegar na minha página.
-<div>
+
 <a href="https://marcelodecarli.github.io/MarceloDeCarliRocha/" target="_blank">Link para acessar a página.</a>
-</div>
 
 ---
-
-
-
 
 ## Quais tecnologias utilizadas?
 
