@@ -4,7 +4,13 @@
 
 # Como abrir e testar no seu navegado?
 
-[Link](https://marcelodecarli.github.io/MarceloDeCarliRocha/) para acessar a página.
+- Abaixo o link para acessar e navegar na minha página.
+<div>
+<a href="https://marcelodecarli.github.io/MarceloDeCarliRocha/" target="_blank">Link para acessar a página.</a>
+</div>
+
+---
+
 
 
 
